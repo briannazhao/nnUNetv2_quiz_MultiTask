@@ -4,8 +4,7 @@ This repository contains the code and documentation for our multi-task nnUNetv2 
 
 ## Dataset 
 
-- [x] **Public dataset used:** FLARE23 (pancreas subset from FLARE22)
-- [x] **Dataset access:** [https://flare.grand-challenge.org](https://flare.grand-challenge.org)
+- [x] **Public dataset used:** de-identified pancreas CT scans provided
 - [x] **Preprocessing details provided:** normalization, resampling, cropping handled via nnUNetv2 API
 - [x] **Data splits:** 252 training, 72 test cases (`imagesTs`), 36 external validation cases
 
@@ -52,6 +51,6 @@ python predict_multitask.py --input /path/to/imagesTs                           
 - Optional: `--faster` uses faster 3D patch size and tile step for ~10-20% speed gain
 
 
-## ✔️ 7. Contact
+## Contact
 
 For any questions or issues, please contact: [Brianna Zhao / brianna.zhao.m@gmail.com]
