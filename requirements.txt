@@ -1,0 +1,19 @@
+# Core dependencies
+numpy
+pandas
+nibabel
+torch>=1.13.0
+tqdm
+scikit-image
+scikit-learn
+
+# For visualization (optional)
+matplotlib
+seaborn
+
+# nnU-Net v2 (assuming installed from GitHub)
+git+https://github.com/MIC-DKFZ/nnUNet.git@master
+
+
+# Python version
+# Requires Python >= 3.8 (recommended: 3.10)
