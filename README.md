@@ -1,4 +1,4 @@
-# Multi‑Task nnUNetv2 Quiz (Pancreas + Subtype)
+# Multi‑Task nnUNetv2 Quiz
 
 This repository contains a multi‑task extension of **nnUNetv2** that performs **3D pancreas/lesion segmentation** and **3‑class subtype classification** on abdominal CT scans. The code follows the MICCAI reproducibility checklist and includes training, inference, and evaluation pipelines. Experiments were run primarily in **Google Colab**.
 
@@ -7,7 +7,7 @@ This repository contains a multi‑task extension of **nnUNetv2** that performs 
 ## Environments and Requirements
 
 - **OS**: Linux (tested in Google Colab)
-- **CPU / RAM / GPU**: Colab GPU runtime (T4/L4/A100 class; session‑dependent)
+- **CPU / RAM / GPU**: Colab GPU runtime
 - **CUDA**: session‑dependent (see commands below)
 - **Python**: 3.10–3.11 recommended
 
