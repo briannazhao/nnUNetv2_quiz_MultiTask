@@ -61,6 +61,24 @@ For nnUNet‑style evaluation or training, you can also prepare `Dataset500_Panc
 
 ---
 
+## Repository Structure
+
+```
+.
+├── data_prep.py
+├── subtype_mapping.py
+|── multitask_trainer.py          # MultiTaskTrainer (seg + cls)
+├── predict_multitask.py          # inference (resample + SW + priors)
+├── evaluate_multitask.py         # val metrics + CSV export
+├── nnUNetv2_multitask_colab.ipynb
+|── brianna_zhao_results.pdf
+|── brianna_zhao_results.zip
+├── requirements.txt
+└── README.md
+```
+
+---
+
 ## Training
 
 Train the multi-task model (segmentation + classification) using:
@@ -158,37 +176,6 @@ _Observed limitations include lesion under‑segmentation and subtype bias; see 
 - All paths are parameterized via CLI; environment variables for nnUNetv2 are supported:
   - `nnUNet_raw`, `nnUNet_preprocessed`, `nnUNet_results`.
 - Colab‑ready notebook: `nnUNetv2_multitask_colab.ipynb` (training, inference, evaluation).
-
----
-
-## Repository Structure
-
-```
-.
-├── data_prep.py
-├── subtype_mapping.py
-|── multitask_trainer.py          # MultiTaskTrainer (seg + cls)
-├── predict_multitask.py          # inference (resample + SW + priors)
-├── evaluate_multitask.py         # val metrics + CSV export
-├── nnUNetv2_multitask_colab.ipynb
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Submission Packaging (for quiz/test)
-
-Predicted segmentations in `segmentations/` (`quiz_XXX.nii.gz`) and a CSV:
-
-```
-Names,Subtype
-quiz_037.nii.gz,0
-quiz_045.nii.gz,2
-...
-```
-
-Zip as `your_name_results.zip` following the organizer’s template.
 
 ---
 
